@@ -29,7 +29,7 @@ pipeline {
                 failure {
                     emailext attachLog: true, to: "$email",
                     subject: 'Tests Status Email',
-                    body: 'Test Failed!'
+                    body: 'Test Failed, Oh No!'
                 }
             }
         }
