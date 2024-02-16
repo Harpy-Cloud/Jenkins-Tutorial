@@ -24,7 +24,7 @@ pipeline {
                 success {
                     emailext attachLog: true, to: "$email",
                     subject: 'Unit Tests Status Email',
-                    body: 'Test was successful!'
+                    body: 'Test was successful Yay!'
                 }
                 failure {
                     emailext attachLog: true, to: "$email",
